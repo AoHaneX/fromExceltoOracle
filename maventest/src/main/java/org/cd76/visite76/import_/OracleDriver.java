@@ -24,8 +24,8 @@ public class OracleDriver {
 	public Connection createConnection() {
 		try {
 			final String connectionUrl = "jdbc:oracle:thin:@db-ora-trc3dv.cg76.fr:1521/oraserv_visite76_dv";
-			final String userName = "VISITE76";
-			final String userPass = "A4f82d4991fae7c2e5_201031a";
+			final String userName = "[REDACTED]";
+			final String userPass = "[REDACTED]";
 			con = DriverManager.getConnection(connectionUrl, userName, userPass);
 			System.out.println("******* Connection created successfully........");
 		} catch (final Exception e) {
