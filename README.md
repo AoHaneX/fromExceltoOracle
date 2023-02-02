@@ -1,4 +1,4 @@
 # fromExceltoOracle
-Un projet réalisé pour le département de Seine-Maritime visant à la création d'un module en Java permettant d'insérer dans une base de données à partir d'un fichier Excel.
-
+Un projet réalisé pour le département de Seine-Maritime visant à la création d'un module en Java permettant d'insérer dans une base de données à partir d'un fichier Excel. Ce module a servi à la création d'une application mobile visite76 permettant de suivre des expositions de divers lieux culturels appartenant au département de la Seine-Maritime dont des captures d'écrans peuvent être trouvé dans le fichier "Screenshots of the final product".
+Ce module sert en back end pour faire le lien entre les fichiers excel rempli par les employés des lieux culturels et la base de données de l'application Visite76 avec les données des différentes choses exposées ou entreposées.
 Ce projet a été réalisé en 4 semaines à l'occasion d'un stage pour un BTS SIO. Ces 4 semaines m'ont aussi permit de me former de 0 à l'utilisation de Java et d'Oracle.
