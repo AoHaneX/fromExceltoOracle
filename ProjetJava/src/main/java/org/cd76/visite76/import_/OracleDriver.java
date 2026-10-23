@@ -23,6 +23,7 @@ public class OracleDriver {
 
 	public Connection createConnection() {
 		try {
+			// Les informations de connexion sont lues dans les variables d'environnement
 			final String connectionUrl = System.getenv("VISITE76_DB_URL");
 			final String userName = System.getenv("VISITE76_DB_USER");
 			final String userPass = System.getenv("VISITE76_DB_PASSWORD");
