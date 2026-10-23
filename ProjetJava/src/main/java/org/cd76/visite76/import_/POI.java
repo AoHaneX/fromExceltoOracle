@@ -152,8 +152,8 @@ public class POI {
 			ps.setString(2, textLong);
 			ps.setDouble(3, coordonneeX);
 			ps.setDouble(4, coordonneeY);
-			ps.setString(5, titrePoi);
-			ps.setString(6, statutPoi);
+			ps.setString(5, statutPoi);
+			ps.setString(6, titrePoi);
 			ps.executeUpdate();
 
 			ps.close();

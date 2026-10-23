@@ -14,6 +14,10 @@ public class Visite76 {
 		OracleDriver connect = null;
 		final Logger logger = LoggerFactory.getLogger(POI.class);
 		logger.info("Example log from {}", POI.class.getSimpleName());
+		if (args.length < 1) {
+			logger.error("Usage : Visite76 <fichier.xlsx>");
+			return;
+		}
 		try {
 
 			connect = new OracleDriver();
@@ -26,24 +30,8 @@ public class Visite76 {
 
 			if (siteUsed.checkExist() == true) { // Vérifie l'existence du site entré dans la base de donnée peut
 													// importe les majuscules.
-				final FileInputStream fichierExcel = new FileInputStream(new File(
-						"C:\\dev\\workspaces\\Backup\\visite76-import\\target\\classes\\Data\\Tableau_poi.xlsx")); // Définit
-																													// le
-				// fichier
-				// XLSX
-				// à
-				// utiliser
-				// final FileInputStream fichierExcel = new FileInputStream(new File(
-				// "C:\\dev\\workspaces\\Backup\\visite76-import\\target\\classes\\Data\\Tableau du contenu des POI -
-				// application numérique MTAN.xlsx"));
-				// final FileInputStream fichierExcel = new FileInputStream(new
-				// File("C:\\dev\\workspaces\\Backup\\visite76-import\\target\\classes\\Data\\tableau du contenu des POI
-				// _ MVH.xlsx"));
-				// final FileInputStream fichierExcel = new FileInputStream(new File(
-				// "C:\\dev\\workspaces\\Backup\\visite76-import\\target\\classes\\Data\\tableau du contenu des POI _
-				// MVH.xlsx"));
-				// final FileInputStream fichierExcel = new FileInputStream(new File(
-				// "C:\\dev\\workspaces\\Backup\\visite76-import\\target\\classes\\Data\\contenu appli ABSG.xlsx"));
+				// Chemin du fichier Excel (.xlsx) fourni en premier argument du programme
+				final FileInputStream fichierExcel = new FileInputStream(new File(args[0]));
 
 				final fonctionXLSX excel = new fonctionXLSX();
 				excel.useXLSX(fichierExcel, siteUsed.getSiteId(), connect, idCarte);
