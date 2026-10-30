@@ -87,4 +87,4 @@ Captures de l'application alimentée par le module, dans [`Screenshots of the fi
 ## Remarques
 
 - Ni les identifiants de connexion ni les données réelles des sites ne sont publiés.
-- Le code est conservé dans son état de fin de stage. Avec le recul, j'externaliserais aussi le choix du site, j'ajouterais des transactions et des tests automatisés.
+- Le code est conservé dans son état de fin de stage (tag [`fin-de-stage`](https://github.com/AoHaneX/sites-musees-76-data-import/tree/fin-de-stage)), à deux ajustements près en 2026 : fichier d'entrée passé en argument et correction de la mise à jour des POI. Avec le recul, j'externaliserais aussi le choix du site, j'ajouterais des transactions et des tests automatisés.
